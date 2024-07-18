@@ -11,6 +11,10 @@ the Wifi MAC Address would [randomly change](https://forum.radxa.com/t/rock-5c-m
 
 * Decide what MAC Address you want to flash, if you are not sure then pick the current one that has been randomly assigned.   Using `ip addr` to see what this is.
 
+## Warning
+
+You can only write the MAC Address twice to the EFUSE of the AIC8800.  It may have already been burnt once at the factory.
+
 
 ## Flash Process
 
@@ -72,3 +76,9 @@ Run `ip addr` to see MAC Address.
 5: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
     link/ether 11:22:33:44:55:66 brd ff:ff:ff:ff:ff:ff
 ```
+
+## Attribution
+
+Thanks to [feng for the details](https://forum.radxa.com/t/rock-5c-mac-address-changes-on-reboot/21781/6) on this process.
+
+
